@@ -32,8 +32,6 @@ body {
   border-radius: 15px;
   margin-bottom: 15px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 h1 {
   color: #ff4d6d;
@@ -70,8 +68,8 @@ button {
 <body>
 
 <div class="card">
-  <!-- Your couple photo -->
-  <img src= "photo.jpg" alt="Us" class= "main-photo">
+  <!-- BIG COUPLE PHOTO -->
+  <img src="photo.jpg" alt="Us" class="main-photo">
 
   <h1>Abhipsa!, will you be my Valentine?</h1>
 
@@ -85,9 +83,8 @@ button {
 const noBtn = document.getElementById("noBtn");
 const buttonsWrapper = document.querySelector(".buttons");
 
-// make "No" button run in a small circle around "Yes"
 let angle = 0;
-const radius = 80; // distance from Yes button
+const radius = 80;
 
 function moveNoButton() {
   const centerX = buttonsWrapper.clientWidth / 2;
@@ -99,10 +96,9 @@ function moveNoButton() {
   noBtn.style.left = x + "px";
   noBtn.style.top = y + "px";
 
-  angle += 0.4; // speed of rotation
+  angle += 0.4;
 }
 
-// start teasing movement
 setInterval(moveNoButton, 120);
 
 function yesClick() {
@@ -130,5 +126,3 @@ function yesClick() {
 
 </body>
 </html>
-
-
